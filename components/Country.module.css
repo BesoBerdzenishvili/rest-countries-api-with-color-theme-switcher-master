@@ -1,10 +1,9 @@
 .wrapper {
-  border: 1px solid green;
-
   cursor: pointer;
   border-radius: 0.4em;
   width: 100%;
   max-width: 19.3em;
+  height: 24em;
   overflow: hidden;
   background-color: hsl(0, 0%, 100%);
   box-shadow: 2px 2px 7px hsl(0, 0%, 77%), -2px -2px 7px hsl(0, 0%, 77%);
@@ -14,11 +13,11 @@
   margin: 0 1em 3em 1em;
 }
 
-h2 {
+.country_name {
   margin: 0.5em 0;
 }
-a {
+.container {
   text-decoration: none;
   color: black;
-  margin-bottom: 2em;
+  margin: 1.5em 0.7em;
 }

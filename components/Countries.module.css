@@ -1,9 +1,9 @@
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   background-color: hsl(0, 0%, 98%);
 
-  width: 90%;
+  width: 100%;
 }
