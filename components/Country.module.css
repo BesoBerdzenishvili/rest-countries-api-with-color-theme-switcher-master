@@ -1,0 +1,23 @@
+.wrapper {
+  cursor: pointer;
+  border-radius: 0.4em;
+  width: 100%;
+  max-width: 19.3em;
+  height: 24em;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 2px 2px 7px hsl(0, 0%, 77%), -2px -2px 7px hsl(0, 0%, 77%);
+}
+
+.description {
+  margin: 0 1em 3em 1em;
+}
+
+.country_name {
+  margin: 0.5em 0;
+}
+.container {
+  text-decoration: none;
+  color: black;
+  margin: 1.5em 0.7em;
+}

@@ -1,3 +1,9 @@
+import Countries from "../components/Countries";
+
 export default function Home() {
-  return <main>main</main>;
+  return (
+    <main>
+      <Countries />
+    </main>
+  );
 }

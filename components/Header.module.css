@@ -1,6 +1,11 @@
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em 5%;
+  padding: 1em;
+  width: 90%;
+}
+
+.title {
+  font-size: 1.2rem;
 }
