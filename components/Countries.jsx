@@ -2,12 +2,16 @@ import data from "../data/data.json";
 import Country from "./Country";
 import style from "./Countries.module.css";
 
-function Countries() {
+function Countries({ filter }) {
   return (
     <div className={style.wrapper}>
-      {data.map((country) => (
-        <Country data={country} />
-      ))}
+      {data.map(
+        (country) =>
+          (country.region === filter ||
+            country.name.toLowerCase().includes(filter.toLowerCase())) && (
+            <Country data={country} />
+          )
+      )}
     </div>
   );
 }

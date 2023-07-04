@@ -1,0 +1,29 @@
+.container {
+  background-color: hsl(0, 0%, 98%);
+  padding: 3em 0;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.search_input,
+.select {
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 7px hsl(0, 0%, 77%), -2px -2px 7px hsl(0, 0%, 77%);
+  border-radius: 0.3em;
+  height: 3em;
+}
+
+.search_input {
+  background-image: url("../public/search_icon.png");
+  background-repeat: no-repeat;
+  background-position: 1.4em center;
+  background-size: 6%;
+  padding: 0 12em 0 4.5em;
+}
+
+.select {
+  padding: 0 1em;
+  cursor: pointer;
+}
