@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import data from "../../data/data.json";
+import data from "../../../data/data.json";
 import style from "./page.module.css";
 
 function Page({ params }) {
@@ -71,7 +71,9 @@ function Page({ params }) {
                     data.find((country) => country.alpha3Code === border)
                   )
                   .map((country) => (
-                    <div className={style.border_country}>{country.name}</div>
+                    <div className={style.border_country} key={country.name}>
+                      {country.name}
+                    </div>
                   ))}
               </div>
             </div>

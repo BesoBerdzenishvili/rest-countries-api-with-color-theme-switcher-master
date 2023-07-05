@@ -5,7 +5,7 @@ import Image from "next/image";
 function Country({ data }) {
   const { flags, name, capital, region, population } = data;
   return (
-    <Link href={`/${name}`} className={style.container}>
+    <Link href={`/country/${name}`} className={style.container}>
       <div className={style.wrapper}>
         <Image src={flags.svg} alt={name} width={270} height={180} />
         <div className={style.description}>
