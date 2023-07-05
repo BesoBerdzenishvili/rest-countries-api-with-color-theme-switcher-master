@@ -1,5 +1,6 @@
 .container {
-  background-color: hsl(0, 0%, 98%);
+  /* background-color: hsl(0, 0%, 98%); */
+  background-color: hsl(157, 100%, 49%);
   padding: 3em 0;
   display: flex;
   justify-content: space-between;
@@ -26,4 +27,17 @@
 .select {
   padding: 0 1em;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .select {
+    width: 16em;
+    margin-top: 3em;
+  }
+  .search_input {
+    padding: 0 1em 0 4.5em;
+  }
 }
