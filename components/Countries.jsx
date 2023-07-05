@@ -9,7 +9,7 @@ function Countries({ filter }) {
         (country) =>
           (country.region === filter ||
             country.name.toLowerCase().includes(filter.toLowerCase())) && (
-            <Country data={country} />
+            <Country key={country.name} data={country} />
           )
       )}
     </div>
