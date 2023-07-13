@@ -2,10 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
-  width: 90%;
+  padding: 1em 5%;
+  width: 100%;
+  background-color: var(--elements);
+  box-shadow: 2px 2px 7px var(--shadow);
+  z-index: 1;
 }
 
 .title {
   font-size: 1.2rem;
+  color: var(--text);
 }

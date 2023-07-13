@@ -13,6 +13,8 @@ body {
 
   font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
+
+  background-color: var(--background);
 }
 
 main {
@@ -21,4 +23,18 @@ main {
   align-items: center;
 
   width: 100%;
+}
+
+:root {
+  --background: hsl(0, 0%, 98%);
+  --elements: hsl(0, 0%, 100%);
+  --text: hsl(200, 15%, 8%);
+  --shadow: hsl(0, 0%, 88%);
+}
+
+[data-theme="dark"] {
+  --background: hsl(207, 26%, 17%);
+  --elements: hsl(209, 23%, 22%);
+  --text: hsl(0, 0%, 100%);
+  --shadow: hsla(0, 0%, 100%, 0);
 }
