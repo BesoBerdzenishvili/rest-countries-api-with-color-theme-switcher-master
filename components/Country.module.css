@@ -5,19 +5,23 @@
   max-width: 19.3em;
   height: 24em;
   overflow: hidden;
-  background-color: hsl(0, 0%, 100%);
-  box-shadow: 2px 2px 7px hsl(0, 0%, 77%), -2px -2px 7px hsl(0, 0%, 77%);
+  background-color: var(--elements);
+  color: var(--text);
+  box-shadow: 2px 2px 7px var(--shadow), -2px -2px 7px var(--shadow);
 }
 
 .description {
   margin: 0 1em 3em 1em;
 }
 
-.country_name {
+.description p {
   margin: 0.5em 0;
+}
+
+.country_name {
+  margin: 0.5em 0 0.8em 0;
 }
 .container {
   text-decoration: none;
-  color: black;
   margin: 0 0.7em 3em 0.7em;
 }

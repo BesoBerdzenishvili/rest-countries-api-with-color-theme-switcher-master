@@ -1,6 +1,5 @@
 .container {
-  /* background-color: hsl(0, 0%, 98%); */
-  background-color: hsl(157, 100%, 49%);
+  background-color: var(--background);
   padding: 3em 0;
   display: flex;
   justify-content: space-between;
@@ -11,9 +10,11 @@
 .select {
   border: none;
   outline: none;
-  box-shadow: 2px 2px 7px hsl(0, 0%, 77%), -2px -2px 7px hsl(0, 0%, 77%);
+  box-shadow: 2px 2px 7px var(--shadow), -2px -2px 7px var(--shadow);
   border-radius: 0.3em;
   height: 3em;
+  background-color: var(--elements);
+  color: var(--text);
 }
 
 .search_input {
@@ -22,6 +23,11 @@
   background-position: 1.4em center;
   background-size: 6%;
   padding: 0 12em 0 4.5em;
+}
+
+.search_input::placeholder {
+  color: var(--text);
+  opacity: 1;
 }
 
 .select {

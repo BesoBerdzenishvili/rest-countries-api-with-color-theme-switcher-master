@@ -1,7 +1,7 @@
 .container {
   font-size: 16px;
   font-weight: 300;
-  background-color: hsl(0, 0%, 98%);
+  background-color: var(--background);
 
   display: flex;
   flex-direction: column;
@@ -17,13 +17,14 @@
 
 .back_btn {
   cursor: pointer;
-  background-color: #fff;
+  background-color: var(--elements);
+  color: var(--text);
   outline: none;
   border: none;
   border-radius: 0.2em;
   font-size: 1rem;
   padding: 0.5em 2em;
-  box-shadow: 2px 2px 7px hsl(0, 0%, 77%), -2px -2px 7px hsl(0, 0%, 77%);
+  box-shadow: 2px 2px 7px var(--shadow), -2px -2px 7px var(--shadow);
 }
 
 .back_btn:active {
@@ -63,13 +64,13 @@
   font-size: 0.8rem;
 }
 .border_country {
-  background-color: #fff;
+  background-color: var(--elements);
 
   border: none;
   border-radius: 0.2em;
   padding: 0.7em 2em;
   margin: 1em 0.4em 0 0.4em;
-  box-shadow: 2px 2px 4px hsl(0, 0%, 84%), -2px -2px 4px hsl(0, 0%, 84%);
+  box-shadow: 2px 2px 4px var(--shadow), -2px -2px 4px var(--shadow);
 }
 
 @media (min-width: 1023px) {
