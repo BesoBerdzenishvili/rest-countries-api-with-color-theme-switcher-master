@@ -8,14 +8,14 @@ import sun from "../public/sun_icon.png";
 import Image from "next/image";
 
 const DarkMode = () => {
-  const [darkTheme, setDarkTheme] = useState(() => {
-    const saved = localStorage.getItem("darkTheme");
-    return saved ? JSON.parse(saved) : false;
-  });
-
+  const [darkTheme, setDarkTheme] = useState(false);
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
+  useEffect(() => {
+    const saved = localStorage.getItem("darkTheme");
+    setDarkTheme(saved ? JSON.parse(saved) : false);
+  }, []);
   useEffect(() => {
     localStorage.setItem("darkTheme", JSON.stringify(darkTheme));
   }, [darkTheme]);
